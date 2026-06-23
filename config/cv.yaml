@@ -1,0 +1,19 @@
+detection:
+  model: "yolov8n"
+  confidence_threshold: 0.7
+  nms_threshold: 0.45
+  input_size: [640, 640]
+
+tracking:
+  max_age: 30
+  min_hits: 3
+  iou_threshold: 0.3
+
+depth:
+  model: "monodepth2"
+  max_depth: 10.0
+
+slam:
+  feature_detector: "superpoint"
+  matcher: "superglue"
+  keyframe_interval: 5

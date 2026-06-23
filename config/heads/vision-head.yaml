@@ -1,0 +1,15 @@
+camera:
+  resolution: [1280, 720]
+  fps: 30
+  stereo_baseline: 0.06
+  format: bgr
+
+imu:
+  sample_rate: 200
+  fusion: complementary
+  orientation: [0, 0, 0, 1]
+
+depth:
+  mode: stereo
+  max_range: 10.0
+  min_range: 0.2

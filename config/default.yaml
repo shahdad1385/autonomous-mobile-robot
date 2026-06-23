@@ -1,0 +1,36 @@
+robot:
+  name: "mrr-001"
+  max_velocity: 1.5
+  max_angular_velocity: 3.14
+  wheel_base: 0.16
+  wheel_radius: 0.033
+
+head:
+  module: "vision-head"
+  auto_detect: true
+  hot_swap: true
+
+navigation:
+  planner: "astar"
+  obstacle_threshold: 0.3
+  safety_margin: 0.5
+  update_rate: 10
+
+cv:
+  enabled: true
+  detection_confidence: 0.7
+  tracking_buffer: 30
+  model_path: "models/yolov8n.onnx"
+
+learning:
+  enabled: true
+  mode: "online"
+  experience_buffer_size: 50000
+  batch_size: 64
+  learning_rate: 0.0003
+
+logging:
+  level: "INFO"
+  file: "logs/robot.log"
+  max_size_mb: 100
+  backup_count: 5

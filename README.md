@@ -42,7 +42,7 @@ The robot supports hot-swappable head modules via a standardized interface:
 
 ```bash
 # Clone and setup
-git clone <repo-url>
+git clone https://github.com/shahdad1385/autonomous-mobile-robot
 cd autonomous-mobile-robot
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"

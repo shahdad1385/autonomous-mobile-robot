@@ -1,7 +1,4 @@
 # Autonomous Mobile Robot Platform
-
-na torokhoda
-
  
 A modular, learning-enabled autonomous mobile robot platform with computer vision capabilities. Designed for flexibility — mount any head module (sensors, manipulators, displays) and let the robot perceive, learn, and navigate.
 
